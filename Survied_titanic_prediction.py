@@ -15,8 +15,8 @@ from sklearn.preprocessing import Binarizer
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"]='2'
 
-path_train=r'train.csv'
-path_test=r'test.csv'
+path_train=r'C:\Users\Ravik\OneDrive\Documents\GitHub\Titanic_survive_prediction\train.csv'
+path_test=r'C:\Users\Ravik\OneDrive\Documents\GitHub\Titanic_survive_prediction\test.csv'
 test_data=pd.read_csv(path_test)
 imputer=SimpleImputer()
 test_data['Age']=imputer.fit_transform(test_data['Age'].values.reshape(-1,1))
